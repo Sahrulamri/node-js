@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="diagram1" name="Flowchart GMM Augmentasi">
+    <mxGraphModel dx="1095" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Nodes -->
+        <mxCell id="A" value="Load Dataset Pyridazine" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="B" value="Data Cleaning &amp; Scaling&#xa;- Handle Missing Values&#xa;- RobustScaler" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="220" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="C" value="Feature Engineering&#xa;- Polynomial/Interaction&#xa;- Gaussian Noise (opt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="240" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="D" value="LOOCV Split" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="320" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="E" value="GMM Augmentasi&#xa;(Training Set)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="F" value="Test Set Asli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="320" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="G" value="Gradient Boosting&#xa;Training &amp; Prediction" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="220" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="H" value="Evaluasi Model&#xa;R² &amp; RMSE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="I" value="Bandingkan Hasil Eksperimen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="AtoB" edge="1" parent="1" source="A" target="B">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="BtoC" edge="1" parent="1" source="B" target="C">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="CtoD" edge="1" parent="1" source="C" target="D">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="DtoE" edge="1" parent="1" source="D" target="E">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="DtoF" edge="1" parent="1" source="D" target="F">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="EtoG" edge="1" parent="1" source="E" target="G">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="FtoG" edge="1" parent="1" source="F" target="G">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="GtoH" edge="1" parent="1" source="G" target="H">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="HtoI" edge="1" parent="1" source="H" target="I">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
