@@ -1,3 +1,2 @@
-
-
-SELECT * from comments
+ALTER TABLE sample
+ADD COLUMN full_description_text TEXT;
